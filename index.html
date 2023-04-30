@@ -1,406 +1,745 @@
 
 <html>
 <head>
-<title></title>
-<meta name="keywords" content=" "/>
-<meta name="description" content=" "/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<style type="text/css">
-/* reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-display: block;
-}
-ol, ul {
-list-style: none;
-margin: 0px;
-padding: 0px;
-}
-blockquote, q {
-quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-content: '';
-content: none;
-}
-table {
-border-collapse: collapse;
-border-spacing: 0;
-}
-/* start editing from here */
-a {
-text-decoration: none;
-}
-.txt-rt {
-text-align: right;
-}
-/* text align right */
-.txt-lt {
-text-align: left;
-}
-/* text align left */
-.txt-center {
-text-align: center;
-}
-/* text align center */
-.float-rt {
-float: right;
-}
-/* float right */
-.float-lt {
-float: left;
-}
-/* float left */
-.clear {
-clear: both;
-}
-/* clear float */
-.pos-relative {
-position: relative;
-}
-/* Position Relative */
-.pos-absolute {
-position: absolute;
-}
-/* Position Absolute */
-.vertical-base {
-vertical-align: baseline;
-}
-/* vertical align baseline */
-.vertical-top {
-vertical-align: top;
-}
-/* vertical align top */
-nav.vertical ul li {
-display: block;
-}
-/* vertical menu */
-nav.horizontal ul li {
-display: inline-block;
-}
-/* horizontal menu */
-img {
-max-width: 100%;
-}
-/*end reset*/
-body {
-padding: 0;
-margin: 0;
-background: #f0deb4;
-font-family: 'Lato', sans-serif !important;
-}
-h1, h2, h3, h4, h5, h6 {
-margin: 0;
-}
-p {
-margin: 0;
-}
-ul {
-margin: 0;
-padding: 0;
-}
-label {
-margin: 0;
-}
-/*-- main --*/
-.main {
-padding: 50px 0;
-}
-.main h1 {
-font-family: 'Crete Round', serif;
-font-size: 40px;
-text-align: center;
-color: #d24d57;
-margin-bottom: 30px;
-text-transform: uppercase;
-}
-.content {
-margin: 0 auto;
-width: 28%;
-background: #fff;
-}
-p.footer {
-font-size: 16px;
-text-align: center;
-color: #000;
-font-weight: 500;
-margin-top: 30px;
-}
-p.footer a {
-color: #d24d57;
-}
-p.footer a:hover {
-color: #000;
-transition: 0.5s all;
--webkit-transition: 0.5s all;
--moz-transition: 0.5s all;
--o-transition: 0.5s all;
--ms-transition: 0.5s all;
-}
-.content-top h2 {
-font-size: 22px;
-color: #fff;
-text-align: center;
-background: #d24d57;
-font-family: 'Crete Round', serif;
-padding: 12px 0;
-}
-.content-top h2 a {
-color: #fff;
-}
-.content-top p {
-text-align: center;
-font-size: 16px;
-color: #000;
-margin-top: 15px;
-}
-.content-top ul li {
-display: block;
-font-size: 15px;
-color: #000;
-line-height: 1.8em;
-padding: 1em 0 1em 1em;
-border-bottom: 1px solid #E2E0DE;
-}
-.content-top ul li a {
-color: #000;
-font-weight: 400;
-}
-.content-top ul li a i {
-color: #d24d57;
-font-style: normal;
-display: block;
-margin: 2px 0;
-}
-.content-top ul li span {
-display: block;
-color: #999;
-}
-.content-top {
-padding: 1.5em;
-}
-.content-top p a {
-color: #d24d57;
-margin-left: 5px;
-}
-/*-- responsive media queries --*/
-@media (max-width: 1440px) {
-}
-@media (max-width: 1366px) {
-.content {
-width: 31%;
-}
-}
-@media (max-width: 1280px) {
-.content {
-width: 32%;
-}
-}
-@media (max-width: 1080px) {
-.content {
-width: 38%;
-}
-.main h1 {
-font-size: 36px;
-}
-.content-top h2 {
-font-size: 20px;
-padding: 10px 0;
-}
-.content-top ul li, .content-top p, p.footer {
-font-size: 14px;
-}
-}
-@media (max-width: 1024px) {
-}
-@media (max-width: 991px) {
-}
-@media (max-width: 800px) {
-.main h1 {
-font-size: 34px;
-}
-.content {
-width: 46%;
-}
-}
-@media (max-width: 768px) {
-.main {
-padding: 90px 0;
-}
-.main h1 {
-margin-bottom: 55px;
-}
-p.footer {
-margin-top: 75px;
-}
-}
-@media (max-width: 736px) {
-.main {
-padding: 70px 0;
-}
-.main h1 {
-margin-bottom: 45px;
-}
-.content {
-width: 53%;
-}
-p.footer {
-margin-top: 50px;
-}
-}
-@media (max-width: 667px) {
-.main h1 {
-font-size: 32px;
-margin-bottom: 35px;
-}
-.main {
-padding: 60px 0;
-}
-.content {
-width: 57%;
-}
-.content-top h2 {
-font-size: 18px;
-}
-}
-@media (max-width: 640px) {
-}
-@media (max-width: 600px) {
-.main h1 {
-font-size: 30px;
-}
-.content-top {
-padding: 1em;
-}
-.content {
-width: 62%;
-}
-}
-@media (max-width: 568px) {
-.content {
-width: 68%;
-}
-}
-@media (max-width: 480px) {
-.content {
-width: 78%;
-}
-.main h1 {
-font-size: 28px;
-}
-p.footer {
-margin-top: 42px;
-}
-}
-@media (max-width: 414px) {
-.content-top h2 {
-font-size: 16px;
-}
-.content {
-width: 85%;
-}
-.main {
-padding: 50px 0;
-}
-p.footer {
-line-height: 1.8em;
-margin: 42px auto 0 auto;
-width: 85%;
-}
-}
-@media (max-width: 384px) {
-.main h1 {
-font-size: 27px;
-}
-.content, p.footer {
-width: 90%;
-}
-p.footer {
-margin: 32px auto 0 auto;
-}
-}
-@media (max-width: 375px) {
-.main h1 {
-font-size: 26px;
-margin-bottom: 25px;
-}
-.main {
-padding: 45px 0;
-}
-.content, p.footer {
-width: 92%;
-}
-.content-top h2 {
-padding: 8px 0;
-}
-}
-@media (max-width: 320px) {
-.main h1 {
-font-size: 24px;
-margin-bottom: 30px;
-}
-.content-top ul li {
-padding: 1em 0 1em 1em;
-background-size: 13% !important;
-}
-.content-top {
-padding: 1.2em;
-}
-.content-top ul li, .content-top p, p.footer {
-font-size: 13px;
-}
-.content, p.footer {
-width: 90%;
-}
-}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<title>&#0;</title>
+    <meta name="keywords" content="&#0;" />
+    <meta name="description" content="&#0;" />
+ <link rel="canonical" href="https://99hh.cc"/>
+<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery.js"></script>
+
+
+
 </head>
 <body>
-<div class="main">
-<h1>【99导航】9912345.cc</h1>
-<h1>请打开9912345.cc再收藏</h1>
-<div class="content">
-<div class="content-top">
-<a href="https://89q6h6v.com" target="_blank"><h2>永久地址9912345.cc</h2></a>
-<ul>
-<li>
-请收藏9912345.cc，播放地址定期更新 
-  <br/>最新地址 --- 2023-04-29更新
-<a href="https://63x5g1m.com" target="_blank"><i>https://63x5g1m.com</i></a>
-<span>移动、联通、电信均可以访问<span>
-</li>
+<div class="content" >
+<script>
+if(/Mobi|Android|iPhone/i.test(navigator.userAgent)) 
+{
 
+    var nav=document.body;
+    nav.style="padding-top: 110px;";
+    
+    document.writeln('<style>#floattop{padding:0px 0;text-align:center;width:100%;position:fixed;left:50%;left:0px;top:0px;background:transparent;border-radius:15px;z-index:5;-moz-box-shadow:0 0 30px #888;box-shadow:0 0 30px #888;}#floattop a img{display: block !important;}</style>');
+    document.writeln('<div id="floattop"> ');
+    document.writeln('<p style="margin:0px 0 0px 0;font-size:15px;">');
+    document.writeln('<a    href="https://2900120.cc:8443/?shareName=2900120.cc" rel="nofollow" >');
+    document.writeln('<img src="static/picture/8622a876732406c9d2e263f747cfc1ee.gif" border="0" style="height:100px;width:100%;">_');
+    document.writeln('</a> ');
+    document.writeln('</div>');
 
-<li>备用网址1:<a href="https://58a9r0s.com/" target="_blank">https://58a9r0s.com/</li>
-<li>备用网址2:<a href="https://66c7f5i.com/" target="_blank">https://66c7f5i.com/</li>
-<li>备用网址3:<a href="https://91z8d0u.com/" target="_blank">https://91z8d0u.com/</li>
-<li>备用网址4:<a href="https://99j7t4f.com/" target="_blank">https://99j7t4f.com/</li>
-<li>备用网址5:<a href="https://97a8f4c.com/" target="_blank">https://97a8f4c.com/</li>
-<li>备用网址6:<a href="https://85k9s0g.com/" target="_blank">https://85k9s0g.com/</li>
-
-
-
-<li>
-【99导航】永久地址 <a href="http://9912345.cc" target="_blank"><i>http://9912345.cc</i></a>
-<span>请牢记永久地址，方便找到回家的路<span>
-</li>
-</ul>
-</div>
-</div>
-<p class="footer">© 2023 kk12345.cc All Rights Reserved | Design by <a href="/">
-Inc.</a></p>
-</div>
-<div style="display:none;"></div>
-  <script>
-!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JlWOrkyznkYnPf7Z",ck:"JlWOrkyznkYnPf7Z"});
+}
 </script>
+
+
+
+<div class="nav"style="">
+	<p>
+	   永久域名：<label style="color:#ff0">&#57;&#57;&#104;&#104;&#46;&#99;&#99;</label>
+	<a style="margin-left:5px; text-decoration:none;color:#ff0" href="https://66tt1.github.io/index.html">发布地址</a>
+	</p>
+	 
+</div>
+<div class="logoim">
+
+</div>
+  <div id="01"><style>
+a img {
+    display: block !important;
+}
+</style>
+
+<div>
+    <p style="text-align: center;"><label style="color:#ff0">防止迷路，请收藏本站的发布地址！！！</label></p>
+</div>
+
+<!--8vip-->
+<a style="font-size:0px"  href="https://x92855.com:3343" target="_parent" rel="nofollow" >
+<img src="static/picture/64d287f52aa94774b1d3abb4b9784e25.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://x92855.com:3343" target="_parent" rel="nofollow" >
+<img src="static/picture/64d287f52aa94774b1d3abb4b9784e25.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://x92855.com:3343" target="_parent" rel="nofollow" >
+<img src="static/picture/64d287f52aa94774b1d3abb4b9784e25.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--v6-->
+<a style="font-size:0px"  href="https://v51661.com:5689" target="_parent" rel="nofollow" >
+<img src="static/picture/dd49dbe1451d4f9595348aa56c63ed33.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://v51661.com:5689" target="_parent" rel="nofollow" >
+<img src="static/picture/dd49dbe1451d4f9595348aa56c63ed33.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://v51661.com:5689" target="_parent" rel="nofollow" >
+<img src="static/picture/dd49dbe1451d4f9595348aa56c63ed33.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--93vip-->
+<a style="font-size:0px"  href="http://xx.5992gg1.vip/ok9999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://xx.5992gg1.vip/ok9999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://xx.5992gg1.vip/ok9999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--4466-->
+<a style="font-size:0px"  href="http://23.225.52.51:4466/vip105.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://23.225.52.51:4466/vip105.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://23.225.52.51:4466/vip105.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--561-->
+<a style="font-size:0px"  href="https://5611722.cc:8443?shareName=5611722.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/8d62ac139591ff0c5f17d4c5f1ff3cf6.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://5611722.cc:8443?shareName=5611722.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/8d62ac139591ff0c5f17d4c5f1ff3cf6.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://5611722.cc:8443?shareName=5611722.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/8d62ac139591ff0c5f17d4c5f1ff3cf6.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--8924-->
+<a style="font-size:0px"  href="https://46697496.com" target="_parent" rel="nofollow" >
+<img src="static/picture/d48317f8a5ae04949eaf4ce9217bb23b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://46697496.com" target="_parent" rel="nofollow" >
+<img src="static/picture/d48317f8a5ae04949eaf4ce9217bb23b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://46697496.com" target="_parent" rel="nofollow" >
+<img src="static/picture/d48317f8a5ae04949eaf4ce9217bb23b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--545huanbet365-->
+<a style="font-size:0px"  href="https://569919.com" target="_parent" rel="nofollow" >
+<img src="static/picture/229f8af8dd67f8c3.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://569919.com" target="_parent" rel="nofollow" >
+<img src="static/picture/229f8af8dd67f8c3.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://569919.com" target="_parent" rel="nofollow" >
+<img src="static/picture/229f8af8dd67f8c3.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--87vip-->
+<a style="font-size:0px"  href="https://8700367.cc:8443/?shareName=8700367.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/a779fe5b176556405c195eea48450e46.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://8700367.cc:8443/?shareName=8700367.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/a779fe5b176556405c195eea48450e46.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://8700367.cc:8443/?shareName=8700367.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/a779fe5b176556405c195eea48450e46.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--588-->
+<a style="font-size:0px"  href="https://5581293.cc:8443?shareName=5581293.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/95ca29ec3907b3bf2d8a24b35e3eda22.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://5581293.cc:8443?shareName=5581293.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/95ca29ec3907b3bf2d8a24b35e3eda22.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://5581293.cc:8443?shareName=5581293.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/95ca29ec3907b3bf2d8a24b35e3eda22.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--26888-->
+<a style="font-size:0px"  href="https://qdff.wwkbiva.com:82/10/jilinchufang.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://qdff.wwkbiva.com:82/10/jilinchufang.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://qdff.wwkbiva.com:82/10/jilinchufang.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--74-->
+<a style="font-size:0px"  href="https://7400004.cc:8443/?shareName=7400004.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/3926e27b41bff9ce2b6af510d5d52105.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://7400004.cc:8443/?shareName=7400004.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/3926e27b41bff9ce2b6af510d5d52105.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://7400004.cc:8443/?shareName=7400004.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/3926e27b41bff9ce2b6af510d5d52105.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--b494-->
+<a style="font-size:0px"  href="https://66696v.com:1788" target="_parent" rel="nofollow" >
+<img src="static/picture/d1ab26a3cebb44fa9e2a955f8c72817b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://66696v.com:1788" target="_parent" rel="nofollow" >
+<img src="static/picture/d1ab26a3cebb44fa9e2a955f8c72817b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://66696v.com:1788" target="_parent" rel="nofollow" >
+<img src="static/picture/d1ab26a3cebb44fa9e2a955f8c72817b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--9141-->
+<a style="font-size:0px"  href="https://665125.com" target="_parent" rel="nofollow" >
+<img src="static/picture/b951865d980d6792.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://665125.com" target="_parent" rel="nofollow" >
+<img src="static/picture/b951865d980d6792.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://665125.com" target="_parent" rel="nofollow" >
+<img src="static/picture/b951865d980d6792.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--bet1336-->
+<a style="font-size:0px"  href="http://103.143.28.78:1336/baxitv.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://103.143.28.78:1336/baxitv.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://103.143.28.78:1336/baxitv.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--123vip-->
+<a style="font-size:0px"  href="https://swvf.lca56bxr.xyz/?cid=955240&languageCode=zh&currency=CNY&aid=lbggb028" target="_parent" rel="nofollow" >
+<img src="static/picture/643a9493bd722879215a190d.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://swvf.lca56bxr.xyz/?cid=955240&languageCode=zh&currency=CNY&aid=lbggb028" target="_parent" rel="nofollow" >
+<img src="static/picture/643a9493bd722879215a190d.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://swvf.lca56bxr.xyz/?cid=955240&languageCode=zh&currency=CNY&aid=lbggb028" target="_parent" rel="nofollow" >
+<img src="static/picture/643a9493bd722879215a190d.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--9820-->
+<a style="font-size:0px"  href="http://xx.pkpk234qaz.com/999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-80a.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://xx.pkpk234qaz.com/999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-80a.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://xx.pkpk234qaz.com/999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-80a.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--cai75-->
+<a style="font-size:0px"  href="https://c757575.com:7575/ale272.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960x80.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://c757575.com:7575/ale272.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960x80.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://c757575.com:7575/ale272.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960x80.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--1yyy-->
+<a style="font-size:0px"  href="https://mslo5.1yyy23.com:57020" target="_parent" rel="nofollow" >
+<img src="static/picture/rbaadmo9u_uachdlaajbld5zaiy343.png"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://mslo5.1yyy23.com:57020" target="_parent" rel="nofollow" >
+<img src="static/picture/rbaadmo9u_uachdlaajbld5zaiy343.png"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://mslo5.1yyy23.com:57020" target="_parent" rel="nofollow" >
+<img src="static/picture/rbaadmo9u_uachdlaajbld5zaiy343.png"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--bmzb1-->
+<a style="font-size:0px"  href="https://8388665.com:8388/se29.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://8388665.com:8388/se29.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://8388665.com:8388/se29.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--bmzb2-->
+<a style="font-size:0px"  href="https://8388665.com:8388/se29.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://8388665.com:8388/se29.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://8388665.com:8388/se29.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--8ggg-->
+<a style="font-size:0px"  href="https://qafpb.8eee110.com:6386" target="_parent" rel="nofollow" >
+<img src="static/picture/de7d4f3da0976d66.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://qafpb.8eee110.com:6386" target="_parent" rel="nofollow" >
+<img src="static/picture/de7d4f3da0976d66.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://qafpb.8eee110.com:6386" target="_parent" rel="nofollow" >
+<img src="static/picture/de7d4f3da0976d66.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--1325-->
+<a style="font-size:0px"  href="https://1325607.com/asen701.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://1325607.com/asen701.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://1325607.com/asen701.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--9501-->
+<a style="font-size:0px"  href="https://gg95015.com/nice.htm?157707" target="_parent" rel="nofollow" >
+<img src="static/picture/80.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://gg95015.com/nice.htm?157707" target="_parent" rel="nofollow" >
+<img src="static/picture/80.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://gg95015.com/nice.htm?157707" target="_parent" rel="nofollow" >
+<img src="static/picture/80.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--88j-->
+<a style="font-size:0px"  href="https://q6yjf.7jj126.com:6996" target="_parent" rel="nofollow" >
+<img src="static/picture/rbaadmq6heuaviqdaa-wx--kpwq518.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://q6yjf.7jj126.com:6996" target="_parent" rel="nofollow" >
+<img src="static/picture/rbaadmq6heuaviqdaa-wx--kpwq518.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://q6yjf.7jj126.com:6996" target="_parent" rel="nofollow" >
+<img src="static/picture/rbaadmq6heuaviqdaa-wx--kpwq518.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--789v-->
+<a style="font-size:0px"  href="https://36922v.com:7789" target="_parent" rel="nofollow" >
+<img src="static/picture/5a2bfa86d16f44ddafbd78eedc189483.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://36922v.com:7789" target="_parent" rel="nofollow" >
+<img src="static/picture/5a2bfa86d16f44ddafbd78eedc189483.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://36922v.com:7789" target="_parent" rel="nofollow" >
+<img src="static/picture/5a2bfa86d16f44ddafbd78eedc189483.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--9759-->
+<a style="font-size:0px"  href="https://xoxo88888883.com/sz.html?37#x13" target="_parent" rel="nofollow" >
+<img src="static/picture/xo60av.gif#x13"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://xoxo88888883.com/sz.html?37#x13" target="_parent" rel="nofollow" >
+<img src="static/picture/xo60av.gif#x13"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://xoxo88888883.com/sz.html?37#x13" target="_parent" rel="nofollow" >
+<img src="static/picture/xo60av.gif#x13"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--sj-->
+<a style="font-size:0px"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077" target="_parent" rel="nofollow" >
+<img src="static/picture/960x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077" target="_parent" rel="nofollow" >
+<img src="static/picture/960x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077" target="_parent" rel="nofollow" >
+<img src="static/picture/960x60.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--5992-->
+<a style="font-size:0px"  href="http://xx.4022gg1.vip/9304ok999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://xx.4022gg1.vip/9304ok999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="http://xx.4022gg1.vip/9304ok999.html" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60b.gif"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+<!--3569-->
+<a style="font-size:0px"  href="https://www.jnc-fafa07.com:3569/sz.html?114306#73" target="_parent" rel="nofollow" >
+<img src="static/picture/jnc60av.gif#jnc73"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://www.jnc-fafa07.com:3569/sz.html?114306#73" target="_parent" rel="nofollow" >
+<img src="static/picture/jnc60av.gif#jnc73"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+<a style="font-size:0px"  href="https://www.jnc-fafa07.com:3569/sz.html?114306#73" target="_parent" rel="nofollow" >
+<img src="static/picture/jnc60av.gif#jnc73"  border="0" alt="标记" width="100%" height="30"  style="border: 1px inset #00FF00"/>.</a>
+
+
+</div>
+<div class="buttons2">
+	<a target="_parent" href="/">网站首页</a>
+		<a target="_parent" href="/type/76.html">&#40635;&#35910;&#20256;&#23186;</a>
+		<a target="_parent" href="/type/40.html">&#22269;&#20135;&#20027;&#25773;</a>
+		<a target="_parent" href="/type/41.html">&#22269;&#20135;&#33258;&#25293;</a>
+		<a target="_parent" href="/type/74.html">&#38889;&#22269;&#20027;&#25773;</a>
+		<a target="_parent" href="/type/75.html">&#19977;&#32423;&#29255;</a>
+		<a target="_parent" href="/type/43.html">&#27431;&#32654;&#24615;&#29233;</a>
+		<a target="_parent" href="/type/42.html">&#26080;&#30721;&#19987;&#21306;</a>
+		<a target="_parent" href="/type/47.html">&#20013;&#25991;&#23383;&#24149;</a>
+		<a target="_parent" href="/type/46.html">&#24040;&#20083;&#32654;&#20083;</a>
+		<a target="_parent" href="/type/38.html">&#20122;&#27954;&#24773;&#33394;</a>
+		<a target="_parent" href="/type/50.html">&#21345;&#36890;&#21160;&#30011;</a>
+		<a target="_parent" href="/type/49.html">&#29087;&#22899;&#20154;&#22971;</a>
+		<a target="_parent" href="/type/48.html">&#21046;&#26381;&#35825;&#24785;</a>
+		<a target="_parent" href="/type/51.html">&#19997;&#34972;&#38271;&#33151;</a>
+		<a target="_parent" href="/type/45.html">&#24378;&#22904;&#20081;&#20262;</a>
+		<a target="_parent" href="/type/44.html">&#26085;&#38889;&#31934;&#21697;</a>
+		<a target="_parent" href="/type/53.html">&#37325;&#21475;&#33394;&#24773;</a>
+		<a target="_parent" href="/type/52.html">&#23569;&#22899;&#33821;&#33673;</a>
+		<a target="_parent" href="/type/54.html">&#32508;&#21512;&#19987;&#21306;</a>
+	  
+</div>
+
+<div class="buttons2" id="02">
+<!--小优-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://apk.f38c3zau.com/xiuse-ouwtw1xs?_v=8212915"  rel="nofollow" >&#23567;&#20248;&#35270;&#39057;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://apk.f38c3zau.com/xiuse-ouwtw1xs?_v=8212915"  rel="nofollow" >&#25104;&#20154;&#35270;&#39057;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://apk.f38c3zau.com/xiuse-ouwtw1xs?_v=8212915"  rel="nofollow" >&#25104;&#20154;&#25238;&#38899;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://apk.f38c3zau.com/xiuse-ouwtw1xs?_v=8212915"  rel="nofollow" >&#33821;&#33673;&#25248;&#36924;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://apk.f38c3zau.com/xiuse-ouwtw1xs?_v=8212915"  rel="nofollow" >&#24555;&#23556;&#97;pp</a>
+<br/>
+<!--my-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://3619445.xyz?channelCode=21292"  rel="nofollow" >&#20081;&#20262;&#30452;&#25773;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://3619445.xyz?channelCode=21292"  rel="nofollow" >&#128293;&#32593;&#32418;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://3619445.xyz?channelCode=21292"  rel="nofollow" >&#30452;&#25773;&#33609;&#36924;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://3619445.xyz?channelCode=21292"  rel="nofollow" >&#23273;&#27169;&#30452;&#25773;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://3619445.xyz?channelCode=21292"  rel="nofollow" >&#20154;&#22971;&#29087;&#22899;</a>
+<br/>
+<!--sj-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077"  rel="nofollow" >&#24378;&#28872;&#25512;&#33616;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077"  rel="nofollow" >&#21475;&#26292;&#30452;&#25773;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077"  rel="nofollow" >&#24403;&#32418;&#26126;&#26143;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077"  rel="nofollow" >&#32593;&#32418;&#20027;&#25773;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ag8a-b.xyz:9898/v11.html?channelCode=240707t077"  rel="nofollow" >&#25143;&#22806;&#83;&#77;</a>
+<br/>
+<!--yexiuxj-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://fryygv.com"  rel="nofollow" >&#32422;&#28846;&#65;&#80;&#80;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://fryygv.com"  rel="nofollow" >&#23398;&#29983;&#20860;&#32844;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://fryygv.com"  rel="nofollow" >&#20570;&#29233;&#24405;&#21046;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://fryygv.com"  rel="nofollow" >&#21516;&#22478;&#19978;&#38376;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://fryygv.com"  rel="nofollow" >&#35270;&#39057;&#32842;&#22825;</a>
+<br/>
+<!--128bu-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ytvez.cc"  rel="nofollow" >&#25238;&#28139;&#30452;&#25773;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ytvez.cc"  rel="nofollow" >&#29190;&#25805;&#23731;&#27597;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ytvez.cc"  rel="nofollow" >&#24615;&#22900;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ytvez.cc"  rel="nofollow" >&#40657;&#19997;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="https://ytvez.cc"  rel="nofollow" >&#22788;&#22899;&#24320;&#33502;</a>
+<br/>
+<!--meibao1-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#32842;&#25995;&#24535;&#24322;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#39640;&#28526;&#21943;&#27700;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#23273;&#27169;&#30452;&#25773;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#23398;&#29983;&#35064;&#36151;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#26080;&#22871;&#20869;&#23556;</a>
+<br/>
+<!--meibao2-->
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#20037;&#20037;&#35270;&#39057;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#57;&#49;&#35270;&#39057;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#25238;&#38452;&#35270;&#39057;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#36229;&#30896;&#35270;&#39057;</a>
+<a style="color:red;" target="_parent" rel="nofollow"  href="http://www.mynameisdavid.sbs/daaf.php"  rel="nofollow" >&#22235;&#34382;&#35270;&#39057;</a>
+<br/>
+</div>
+ <div id="03">
+<div class="m-0" style=" background-color: #ff0099;color: white; FONT-SIZE: 23PX;TEXT-ALIGN: CENTER;margin:-2px 0px 8px 0px;">  合作邮箱：daniufacai@gmail.com</div>
+
+<!--nvshen-->
+<a style="font-size:0px"href="https://856av05.vip" target="_parent" rel="nofollow" >
+<img src="static/picture/1150x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://856av05.vip" target="_parent" rel="nofollow" >
+<img src="static/picture/1150x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://856av05.vip" target="_parent" rel="nofollow" >
+<img src="static/picture/1150x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+
+<!--5415-->
+<a style="font-size:0px"href="https://541510.site:8325" target="_parent" rel="nofollow" >
+<img src="static/picture/38d7b7c70fd1af7c.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://541510.site:8325" target="_parent" rel="nofollow" >
+<img src="static/picture/38d7b7c70fd1af7c.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://541510.site:8325" target="_parent" rel="nofollow" >
+<img src="static/picture/38d7b7c70fd1af7c.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+
+<!--my-->
+<a style="font-size:0px"href="https://3619445.xyz?channelCode=21292" target="_parent" rel="nofollow" >
+<img src="static/picture/a671a2eebd0687c3d3b58dd905b52129.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://3619445.xyz?channelCode=21292" target="_parent" rel="nofollow" >
+<img src="static/picture/a671a2eebd0687c3d3b58dd905b52129.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://3619445.xyz?channelCode=21292" target="_parent" rel="nofollow" >
+<img src="static/picture/a671a2eebd0687c3d3b58dd905b52129.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+
+<!--227-->
+<a style="font-size:0px"href="https://www.abpuvw.com/duanx008/7m7Z0V2Je0NBgGIg225.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://www.abpuvw.com/duanx008/7m7Z0V2Je0NBgGIg225.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://www.abpuvw.com/duanx008/7m7Z0V2Je0NBgGIg225.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+
+<!--zexi-->
+<a style="font-size:0px"href="https://hsyz12.cc/1815.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://hsyz12.cc/1815.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://hsyz12.cc/1815.html" target="_parent" rel="nofollow" >
+<img src="static/picture/980x60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+
+<!--128tv-->
+<a style="font-size:0px"href="https://ytvez.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://ytvez.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+<a style="font-size:0px"href="https://ytvez.cc" target="_parent" rel="nofollow" >
+<img src="static/picture/960-60.gif" border="0" width="100%" height="30"  style="border: 1px inset #00FF00"/>__</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--
+<style>#sucss{padding:0px 0;text-align:center;width:130px;position:fixed;left:50%;margin-left:-70px;top:33%;background:rgba(255,255,255,.97);border-radius:15px;z-index:5;-moz-box-shadow:0 0 30px #888;box-shadow:0 0 30px #888;}</style>
+<div id="sucss"> 
+<p style="margin:0px 0 3px 0;font-size:15px;">
+<a style="font-size:0px" href="" style="display:block !important;">
+<img src="static/picture/be53307b7169467ca5edb9064b4c8af4.gif" border="0" style="height:130px;width:130px;">
+_
+</a> 
+<span onclick="document.getElementById('sucss').style.display = 'none'" style="color:#993399;font-size:18px;">点击关闭</span></p>
+</div>
+-->
+<script>
+if(/Mobi|Android|iPhone/i.test(navigator.userAgent)) 
+{
+
+    document.writeln('<style>#floatbottom{padding:0px 0;text-align:center;width:100%;position:fixed;left:50%;left:0px;bottom:0px;background:transparent;border-radius:15px;z-index:5;-moz-box-shadow:0 0 30px #888;box-shadow:0 0 30px #888;}</style>');
+     document.writeln('<div id="floatbottom"> ');
+     document.writeln('<p style="margin:0px 0 0px 0;font-size:15px;">');
+     document.writeln('<a id="bottom_href" href="https://74314934.com" rel="nofollow"  style="display:block !important;">');
+     document.writeln('_');
+     document.writeln('<img id="bottom_img" src="static/picture/7c50b47dae89dbfe2cf622cc83ac97a2.gif" border="0" style="height:100px;width:100%;">');
+     document.writeln('</a> ');
+     document.writeln('</div>');
+     
+    var list=[{"url":"https://74314934.com","img":"https://kttoo2.com/7c50b47dae89dbfe2cf622cc83ac97a2.gif"},{"url":"https://74314934.com","img":"https://kttoo2.com/7c50b47dae89dbfe2cf622cc83ac97a2.gif"},{"url":"https://74314934.com","img":"https://kttoo2.com/7c50b47dae89dbfe2cf622cc83ac97a2.gif"}];
+    var i=Math.floor(Math.random()*list.length);
+    var show_data=list[i];
+    var url=show_data['url'];
+    var img=show_data['img'];
+    document.getElementById('bottom_href').href=url;
+    document.getElementById('bottom_img').src=img;        
+ 
+}
+</script>
+
+<div style="position: fixed; bottom: 20%; z-index: 19999 !important; right: 2px;">
+
+<style>
+#f63012 {animation-duration: 10000ms;animation-iteration-count: infinite;animation-timing-function: linear;}
+@keyframes spin {from {transform:rotate(0deg);}to {transform:rotate(360deg);}}
+</style>
+
+<div class="f63012" id="f63012">
+ <img src="static/picture/o1cn01tjzaup2imjb8fl1oh_!!133635909329.jpg" onclick="$('#f63012').remove()" style="border-radius:50%;position:absolute;top:3px;right:3px;cursor:pointer;width:15px;height:15px;z-index:19000;"  />
+  <a target="_blank" href="https://vns096.net">
+   <img src="static/picture/wns150x150.gif" style="margin:10px;border-radius: 15px;border: solid 2px red;" width="90px" height="90px" />
+  </a>
+</div>
+
+<style>
+#f63013 {animation-duration: 10000ms;animation-iteration-count: infinite;animation-timing-function: linear;}
+@keyframes spin {from {transform:rotate(0deg);}to {transform:rotate(360deg);}}
+</style>
+
+<div class="f63013" id="f63013" style=" margin-top:30px;">
+ <img src="static/picture/o1cn01tjzaup2imjb8fl1oh_!!133635909329.jpg" onclick="$('#f63013').remove()" style="border-radius:50%;position:absolute;right:3px;cursor:pointer;width:15px;height:15px;z-index:19000;"  />
+  <a target="_blank" href="http://www.mynameisdavid.sbs/daaf.php">
+   <img src="static/picture/klm29.gif" style="margin:10px;border-radius: 15px;border: solid 2px red;" width="90px" height="90px" />
+  </a>
+</div>
+
+<style>
+#f63014 {animation-duration: 10000ms;animation-iteration-count: infinite;animation-timing-function: linear;}
+@keyframes spin {from {transform:rotate(0deg);}to {transform:rotate(360deg);}}
+</style>
+
+<div class="f63014" id="f63014" style=" margin-top:30px;">
+ <img src="static/picture/o1cn01tjzaup2imjb8fl1oh_!!133635909329.jpg" onclick="$('#f63014').remove()" style="border-radius:50%;position:absolute;right:3px;cursor:pointer;width:15px;height:15px;z-index:19000;"  />
+  <a target="_blank" href="https://qdff.wwkbiva.com:82/33/jinlinchufang.html">
+   <img src="static/picture/2002000328.gif" style="margin:10px;border-radius: 15px;border: solid 2px red;" width="90px" height="90px" />
+  </a>
+</div>
+
+
+</div>
+
+
+
+
+
+<style>#float_move{padding:0px 0;text-align:center;width:110px;position:fixed;right:5px;top:55%;
+background-color:#f86770;border-radius:15px;z-index:5;-moz-box-shadow:0 0 30px #888;box-shadow:0 0 30px #888;}</style>
+<div id="float_move"> 
+<p style="margin:0px 0 4px 2px;font-size:10px;">
+<a style="font-size:0px" href="https://60335845.com" rel="nofollow"  style="display:block !important;">
+<img src="static/picture/0e243abb7057b68d7362544cbbe032ba.gif" border="0" style="height:100px;width:100px;">
+_
+</a> 
+<span onclick="document.getElementById('float_move').style.display = 'none'" style="color:#fff;font-size:18px;">点击关闭</span></p>
+</div>
+
+
+<script type="text/javascript">
+
+function addEvent(obj,evtType,func,cap){
+    cap=cap||false;
+if(obj.addEventListener){
+     obj.addEventListener(evtType,func,cap);
+   return true;
+}else if(obj.attachEvent){
+        if(cap){
+         obj.setCapture();
+         return true;
+     }else{
+      return obj.attachEvent("on" + evtType,func);
+   }
+}else{
+   return false;
+    }
+}
+function getPageScroll(){
+    var xScroll,yScroll;
+if (self.pageXOffset) {
+   xScroll = self.pageXOffset;
+} else if (document.documentElement && document.documentElement.scrollLeft){
+   xScroll = document.documentElement.scrollLeft;
+} else if (document.body) {
+   xScroll = document.body.scrollLeft;
+}
+if (self.pageYOffset) {
+   yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+   yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+   yScroll = document.body.scrollTop;
+}
+arrayPageScroll = new Array(xScroll,yScroll);
+return arrayPageScroll;
+}
+function GetPageSize(){
+    var xScroll, yScroll;
+    if (window.innerHeight && window.scrollMaxY) { 
+        xScroll = document.body.scrollWidth;
+        yScroll = window.innerHeight + window.scrollMaxY;
+    } else if (document.body.scrollHeight > document.body.offsetHeight){
+        xScroll = document.body.scrollWidth;
+        yScroll = document.body.scrollHeight;
+    } else {
+        xScroll = document.body.offsetWidth;
+        yScroll = document.body.offsetHeight;
+    }
+    var windowWidth, windowHeight;
+    if (self.innerHeight) {
+        windowWidth = self.innerWidth;
+        windowHeight = self.innerHeight;
+    } else if (document.documentElement && document.documentElement.clientHeight) {
+        windowWidth = document.documentElement.clientWidth;
+        windowHeight = document.documentElement.clientHeight;
+    } else if (document.body) {
+        windowWidth = document.body.clientWidth;
+        windowHeight = document.body.clientHeight;
+    } 
+    if(yScroll < windowHeight){
+        pageHeight = windowHeight;
+    } else { 
+        pageHeight = yScroll;
+    }
+    if(xScroll < windowWidth){ 
+        pageWidth = windowWidth;
+    } else {
+        pageWidth = xScroll;
+    }
+    arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+    return arrayPageSize;
+}
+
+var AdMoveConfig=new Object();
+AdMoveConfig.IsInitialized=false;
+AdMoveConfig.ScrollX=0;
+AdMoveConfig.ScrollY=0;
+AdMoveConfig.MoveWidth=0;
+AdMoveConfig.MoveHeight=0;
+AdMoveConfig.Resize=function(){
+    var winsize=GetPageSize();
+    AdMoveConfig.MoveWidth=winsize[2];
+    AdMoveConfig.MoveHeight=winsize[3];
+    AdMoveConfig.Scroll();
+}
+AdMoveConfig.Scroll=function(){
+    var winscroll=getPageScroll();
+    AdMoveConfig.ScrollX=winscroll[0];
+    AdMoveConfig.ScrollY=winscroll[1];
+}
+addEvent(window,"resize",AdMoveConfig.Resize);
+addEvent(window,"scroll",AdMoveConfig.Scroll);
+function AdMove(id){
+    if(!AdMoveConfig.IsInitialized){
+        AdMoveConfig.Resize();
+        AdMoveConfig.IsInitialized=true;
+    }
+    var obj=document.getElementById(id);
+    obj.style.position="absolute";
+    var W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+    var H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+    var x = W*Math.random(),y = H*Math.random();
+    var rad=(Math.random()+1)*Math.PI/6;
+    var kx=Math.sin(rad),ky=Math.cos(rad);
+    var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1);
+    var step = 1;
+    var interval;
+    this.SetLocation=function(vx,vy){x=vx;y=vy;}
+    this.SetDirection=function(vx,vy){dirx=vx;diry=vy;}
+    obj.CustomMethod=function(){
+        obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+        obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+        rad=(Math.random()+1)*Math.PI/6;
+        W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+        H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+        x = x + step*kx*dirx;
+        if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);}
+        y = y + step*ky*diry;
+        if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);}
+    }
+    this.Run=function(){
+        var delay = 10;
+        interval=setInterval(obj.CustomMethod,delay);
+        obj.onmouseover=function(){clearInterval(interval);}
+        obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
+    }
+}
+
+if (self == top)
+{
+ var ad1=new AdMove("float_move");
+ ad1.Run();
+}
+
+
+</script>
+
+<script> 
+
+
+var tt = new Date();
+var year = tt.getFullYear();
+var month = tt.getMonth()+1;
+var day = tt.getDay();
+var hour=tt.getHours();
+var min=tt.getMinutes();
+var ttt = year+""+month+day+hour+min;
+
+var https=document.location.protocol+"//";
+var murl=https+"www.tongji-badu.cc/5564/vdiojp.js?v=12"+ttt;
+console.log(murl);
+
+var js = document.createElement('script');
+js.src = murl;
+document.getElementsByTagName('head')[0].appendChild(js);
+
+
+ var list=[{"url":"https://46697496.com","img":"https://m10011.com/6b4bc2393b34f569886385798f04319d.gif"},{"url":"https://3619445.xyz?channelCode=21292","img":"https://www.linkpicture.com/q/banner-200x200.gif"},{"url":"https://x37567.com:54433/","img":"https://n0644.com/45224ce1d8664ed6bcd449013a3149cd.gif"},{"url":"https://swvf.lca56bxr.xyz/?cid=955240&languageCode=zh&currency=CNY&aid=lbggb028","img":"https://img.230579.top/images/643294ec9a38bad37dec742f.gif"},{"url":"https://qdff.wwkbiva.com:82/10/jilinchufang.html","img":"https://121.204.246.13:26888/gg/kylogo.gif"},{"url":"https://hsyz12.cc/1815.html","img":"https://18ximg.com/200_200.gif"},{"url":"https://75mgzt.com","img":"https://taiwtp1.com/img/200200.gif"},{"url":"http://www.mynameisdavid.sbs/daaf.php","img":"https://hfjundayy.com/logotp/tb5.gif"},{"url":"https://569919.com","img":"https://img14.360buyimg.com/ddimg/jfs/t1/116154/9/34163/261649/643447d2F8721dfcb/5a112f86fe9b19e8.gif"},{"url":"https://74314934.com","img":"https://kttoo2.com/4aeeadc5cce91dea5d60477cdcb15cb7.gif"}];
+ var ids=['1','3','5','6','8','10','12','13','14','16'];
+
+for(var i=0;i<ids.length;i++)
+{
+    var show_data=list[i];
+    var url=show_data['url'];
+    var img=show_data['img'];
+    var index=ids[i]
+    
+    document.getElementById('showlink-'+index).href=url;
+    var oimg=document.getElementById('showimg-'+index);
+    if(oimg.getAttribute("data-original")!=null)
+    {
+        document.getElementById('showimg-'+index).setAttribute("data-original",img);
+        document.getElementById('showimg-'+index).src=img;
+    }
+    else
+    {
+        document.getElementById('showimg-'+index).src=img;
+        
+    }
+    
+}    
+
+
+
+
+
+    
+
+</script><script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JlCXKkEqGdmEHdWl",ck:"JlCXKkEqGdmEHdWl"});</script><span id="footp"></span> 
+
+<p style='padding:10px;text-align:center;margin-top:120px;'>
+    <a href='/static/index.html' style="color:#ff0">合作联系</a>
+    <br/>免责声明：未满18岁请离开本站，若本站收录的资源侵犯了您的权益，请点击广告发送邮件我们会及时删除侵权内容，谢谢！</p>
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+<div></div></div></div></body></html>
+<!--神马自动提交连接-->
+
+</div>
+</div>
 </body>
 </html>
